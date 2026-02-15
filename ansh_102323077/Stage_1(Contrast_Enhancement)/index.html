@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://evensem2026-cv-lab.github.io/Multi-Scan-Fingerprint-Reconstruction-CV/ansh_102323077/article1/">
+        <link rel="canonical" href="https://evensem2026-cv-lab.github.io/Multi-Scan-Fingerprint-Reconstruction-CV/ansh_102323077/Stage_1%28Contrast_Enhancement%29/">
       
       
         <link rel="prev" href="../">
@@ -25,7 +25,7 @@
     
     
       
-        <title>Article1 - Multi-Scan Fingerprint Reconstruction</title>
+        <title>Stage 1(Contrast Enhancement) - Multi-Scan Fingerprint Reconstruction</title>
       
     
     
@@ -105,7 +105,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Article1
+              Stage 1(Contrast Enhancement)
             
           </span>
         </div>
@@ -668,7 +668,7 @@
   <span class="md-ellipsis">
     
   
-    Article1
+    Stage 1(Contrast Enhancement)
   
 
     
@@ -1030,9 +1030,42 @@
 
 
 
-  <h1>Article1</h1>
+  <h1>Stage 1(Contrast Enhancement)</h1>
 
-
+<ul>
+<li>When we started working on fingerprint reconstruction for elderly users, I realized something very simple — the main issue isn’t matching, it’s clarity.</li>
+</ul>
+<p>Many times the fingerprint scanner does capture the image, but the ridges are too faint. For elderly users especially, ridge contrast is low due to skin dryness, worn patterns, and uneven pressure. If the ridges are not clearly visible, everything else in the pipeline becomes unstable — orientation, alignment, fusion, all of it.</p>
+<p>So for Stage 1, my responsibility was to improve ridge visibility using contrast enhancement.</p>
+<ul>
+<li>Instead of jumping into heavy deep learning models, I chose classical image processing techniques because:</li>
+</ul>
+<p>. They are lightweight and fast</p>
+<p>&nbsp;</p>
+<p>. They are explainable</p>
+<p>. They work well for texture-based patterns like fingerprints</p>
+<p>. They are practical for low-cost real-world systems</p>
+<p>Since fingerprints are structured ridge patterns, improving local contrast is more important than fancy models.</p>
+<ul>
+<li>I implemented and compared three techniques:</li>
+</ul>
+<p>Histogram Equalization – improves overall image contrast but can increase noise.</p>
+<p>CLAHE – enhances contrast locally and prevents over-amplification. This worked best for fingerprint ridges.</p>
+<p>Adaptive Contrast Stretching – controlled intensity scaling without aggressive enhancement.</p>
+<p>After testing, CLAHE gave the most stable and natural ridge enhancement, so it became the default preprocessing method.</p>
+<ul>
+<li>If contrast is poor:</li>
+</ul>
+<p>. Gradients become weak</p>
+<p>. Orientation estimation becomes unstable</p>
+<p>. Ridge frequency detection fails</p>
+<p>By strengthening ridge visibility early, we make the next stages more reliable.</p>
+<p>I structured the code as a reusable module so other members can directly call:</p>
+<p><strong><em>"preprocess_image(img, method="clahe")"</em></strong></p>
+<p>This keeps the pipeline clean and collaborative.</p>
+<ul>
+<li>For Stage 1, my goal was simple — make sure the fingerprint input is strong before anything else touches it. A strong foundation makes the entire multi-capture reconstruction system more stable.</li>
+</ul>
 
 
 
