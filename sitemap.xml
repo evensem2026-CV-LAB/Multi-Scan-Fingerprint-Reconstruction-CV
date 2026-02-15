@@ -1,35 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://&lt;YOUR_GITHUB_USERNAME&gt;.github.io/&lt;REPO_NAME&gt;/</loc>
+         <loc>https://evensem2026-cv-lab.github.io/Multi-Scan-Fingerprint-Reconstruction-CV/</loc>
          <lastmod>2026-02-15</lastmod>
     </url>
     <url>
-         <loc>https://&lt;YOUR_GITHUB_USERNAME&gt;.github.io/&lt;REPO_NAME&gt;/methodology/</loc>
+         <loc>https://evensem2026-cv-lab.github.io/Multi-Scan-Fingerprint-Reconstruction-CV/methodology/</loc>
          <lastmod>2026-02-15</lastmod>
     </url>
     <url>
-         <loc>https://&lt;YOUR_GITHUB_USERNAME&gt;.github.io/&lt;REPO_NAME&gt;/team/</loc>
+         <loc>https://evensem2026-cv-lab.github.io/Multi-Scan-Fingerprint-Reconstruction-CV/team/</loc>
          <lastmod>2026-02-15</lastmod>
     </url>
     <url>
-         <loc>https://&lt;YOUR_GITHUB_USERNAME&gt;.github.io/&lt;REPO_NAME&gt;/ansh_102323077/</loc>
+         <loc>https://evensem2026-cv-lab.github.io/Multi-Scan-Fingerprint-Reconstruction-CV/ansh_102323077/</loc>
          <lastmod>2026-02-15</lastmod>
     </url>
     <url>
-         <loc>https://&lt;YOUR_GITHUB_USERNAME&gt;.github.io/&lt;REPO_NAME&gt;/chirag_102323072/</loc>
+         <loc>https://evensem2026-cv-lab.github.io/Multi-Scan-Fingerprint-Reconstruction-CV/chirag_102323072/</loc>
          <lastmod>2026-02-15</lastmod>
     </url>
     <url>
-         <loc>https://&lt;YOUR_GITHUB_USERNAME&gt;.github.io/&lt;REPO_NAME&gt;/lakshit_102323059/</loc>
+         <loc>https://evensem2026-cv-lab.github.io/Multi-Scan-Fingerprint-Reconstruction-CV/chirag_102323072/test/</loc>
          <lastmod>2026-02-15</lastmod>
     </url>
     <url>
-         <loc>https://&lt;YOUR_GITHUB_USERNAME&gt;.github.io/&lt;REPO_NAME&gt;/preprocessing/</loc>
+         <loc>https://evensem2026-cv-lab.github.io/Multi-Scan-Fingerprint-Reconstruction-CV/lakshit_102323059/</loc>
          <lastmod>2026-02-15</lastmod>
     </url>
     <url>
-         <loc>https://&lt;YOUR_GITHUB_USERNAME&gt;.github.io/&lt;REPO_NAME&gt;/siddhi_102323065/</loc>
+         <loc>https://evensem2026-cv-lab.github.io/Multi-Scan-Fingerprint-Reconstruction-CV/preprocessing/</loc>
+         <lastmod>2026-02-15</lastmod>
+    </url>
+    <url>
+         <loc>https://evensem2026-cv-lab.github.io/Multi-Scan-Fingerprint-Reconstruction-CV/siddhi_102323065/</loc>
          <lastmod>2026-02-15</lastmod>
     </url>
 </urlset>
