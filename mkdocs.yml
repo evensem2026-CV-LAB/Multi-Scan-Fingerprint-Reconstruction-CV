@@ -1,5 +1,5 @@
 site_name: "Multi-Scan Fingerprint Reconstruction"
-site_url: https://<YOUR_GITHUB_USERNAME>.github.io/<REPO_NAME>/
+site_url: https://evensem2026-cv-lab.github.io/Multi-Scan-Fingerprint-Reconstruction-CV/
 
 theme:
   name: material
@@ -24,4 +24,4 @@ plugins:
   - search
   - awesome-pages
 
-copyright: Made with love by <a href="https://github.com/chiragtaneja" target="_blank">Chirag</a>
+copyright: Made by <a href="https://github.com/ctxnn" target="_blank">Chirag</a>
