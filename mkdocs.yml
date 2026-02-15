@@ -1,0 +1,27 @@
+site_name: "Multi-Scan Fingerprint Reconstruction"
+site_url: https://<YOUR_GITHUB_USERNAME>.github.io/<REPO_NAME>/
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - content.code.copy
+    - content.action.edit
+    - toc.integrate
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+plugins:
+  - search
+  - awesome-pages
+
+copyright: Made with love by <a href="https://github.com/chiragtaneja" target="_blank">Chirag</a>
