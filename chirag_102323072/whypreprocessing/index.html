@@ -8,10 +8,10 @@
       
       
       
-        <link rel="canonical" href="https://evensem2026-cv-lab.github.io/Multi-Scan-Fingerprint-Reconstruction-CV/chirag_102323072/test1/">
+        <link rel="canonical" href="https://evensem2026-cv-lab.github.io/Multi-Scan-Fingerprint-Reconstruction-CV/chirag_102323072/whypreprocessing/">
       
       
-        <link rel="prev" href="../test/">
+        <link rel="prev" href="../">
       
       
         <link rel="next" href="../../lakshit_102323059/">
@@ -25,7 +25,7 @@
     
     
       
-        <title>just testing again - Multi-Scan Fingerprint Reconstruction</title>
+        <title>The Critical Role of Preprocessing in Fingerprint Reconstruction for Elderly Biometrics - Multi-Scan Fingerprint Reconstruction</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#just-testing-again" class="md-skip">
+        <a href="#the-critical-role-of-preprocessing-in-fingerprint-reconstruction-for-elderly-biometrics" class="md-skip">
           Skip to content
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              just testing again
+              The Critical Role of Preprocessing in Fingerprint Reconstruction for Elderly Biometrics
             
           </span>
         </div>
@@ -773,34 +773,6 @@
                 
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../test/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    JUST TESTING
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
     
   
   
@@ -813,6 +785,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Critical Role of Preprocessing in Fingerprint Reconstruction for Elderly Biometrics
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -820,7 +810,7 @@
   <span class="md-ellipsis">
     
   
-    just testing again
+    The Critical Role of Preprocessing in Fingerprint Reconstruction for Elderly Biometrics
   
 
     
@@ -829,6 +819,58 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#why-preprocessing-matters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Preprocessing Matters
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-necessity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        General Necessity
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#specific-application-elderly-fingerprint-reconstruction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Specific Application: Elderly Fingerprint Reconstruction
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1037,7 +1079,16 @@
 
 
 
-<h1 id="just-testing-again">just testing again</h1>
+<h1 id="the-critical-role-of-preprocessing-in-fingerprint-reconstruction-for-elderly-biometrics">The Critical Role of Preprocessing in Fingerprint Reconstruction for Elderly Biometrics</h1>
+<h2 id="why-preprocessing-matters">Why Preprocessing Matters</h2>
+<p>In classical computer vision pipelines, preprocessing transforms raw, imperfect data into a standardized format suitable for analysis. For biometric systems, this step is non-negotiable—garbage in, garbage out applies directly to ridge pattern recognition.</p>
+<h2 id="general-necessity">General Necessity</h2>
+<p>Preprocessing serves three universal purposes: <strong>noise suppression</strong> eliminates sensor artifacts and environmental interference; <strong>contrast enhancement</strong> maximizes feature visibility; and <strong>normalization</strong> ensures consistent input for downstream algorithms. Without it, registration algorithms fail to find correspondences, and fusion strategies amplify rather than reduce noise.</p>
+<h2 id="specific-application-elderly-fingerprint-reconstruction">Specific Application: Elderly Fingerprint Reconstruction</h2>
+<p>This project addresses uniquely degraded inputs: elderly fingerprints exhibit <strong>faint ridge continuity</strong>, <strong>variable pressure distortions</strong>, and <strong>dry skin artifacts</strong> that confuse standard matchers. Single-image enhancement proves insufficient when ridge information is physically missing.</p>
+<p>Our multi-capture pipeline relies on preprocessing to enable successful fusion. <strong>Histogram equalization</strong> combats low contrast from thin, worn ridges. <strong>Adaptive filtering</strong> removes scanner noise without blurring critical minutiae. These steps ensure that subsequent registration algorithms can accurately align multiple impressions based on ridge orientation—alignment fails catastrophically on raw, uneven exposures.</p>
+<p>The confidence-weighted fusion strategy depends on reliable local quality metrics derived from preprocessed images. Only when individual captures exhibit clear ridge structure can the system distinguish between valid patterns and acquisition artifacts. Finally, <strong>DWT-based enhancement</strong> requires properly conditioned input to sharpen ridge continuity without introducing ringing artifacts.</p>
+<p>In resource-constrained environments like e-Mitra centres, robust preprocessing eliminates the need for expensive deep learning infrastructure while delivering dependable biometric accessibility for elderly users.</p>
 
 
 
